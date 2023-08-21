@@ -1,0 +1,184 @@
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-Bold.woff2") format("woff2"), url("../fonts/CormorantUpright-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-Regular.woff2") format("woff2"), url("../fonts/CormorantUpright-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-SemiBold.woff2") format("woff2"), url("../fonts/CormorantUpright-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TTTrailers;
+  font-display: swap;
+  src: url("../fonts/TTTrailers-Regular.woff2") format("woff2"), url("../fonts/TTTrailers-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  padding: 4vw;
+}
+
+.card-box {
+  border-radius: 1.042vw;
+  border: 0.052vw solid #e5e4e1;
+  background: #ffffff;
+  overflow: hidden;
+  width: 41.823vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1vw auto;
+}
+
+.box-picture {
+  height: 27.177vw;
+  width: 100%;
+}
+
+.swiper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 2.604vw;
+  height: 2.604vw;
+  opacity: 1;
+  top: unset;
+  bottom: 1.25vw;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  fill: #000;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next.swiper-button-disabled svg,
+.swiper-button-prev.swiper-button-disabled svg {
+  fill: #c4c4c4;
+}
+
+.swiper-button-prev {
+  left: 1.667vw;
+}
+
+.swiper-button-next {
+  left: 5.573vw;
+}
+
+.additionalSwiper {
+  width: 41.823vw;
+  border-top: 0.052vw solid #e5e4e1;
+  padding: 1.302vw 1.667vw 1.25vw;
+}
+
+.additionalSwiper .swiper-slide {
+  width: 8.438vw;
+  height: 5.313vw;
+  border-radius: 0.313vw;
+  overflow: hidden;
+  margin-right: 0.625vw;
+  border: 0.13vw solid transparent;
+}
+
+.additionalSwiper .swiper-slide-thumb-active {
+  border-color: #cc965e;
+}
+
+.additionalSwiper .swiper-slide:last-child {
+  margin-right: 0;
+}
+
+.gallerySwiper {
+  margin: 2.865vw auto 0;
+  width: 90vw;
+}
+
+.gallerySwiper .swiper-slide {
+  width: 47.917vw;
+  height: 29.896vw;
+  border-radius: 1.458vw;
+  overflow: hidden;
+  margin-right: 2.604vw;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 2.24vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625vw;
+}
+
+.swiper-pagination-bullet {
+  width: 0.729vw;
+  height: 0.729vw;
+  background: #d9d9d9;
+  opacity: 1;
+  margin: 0 !important;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  width: 1.198vw;
+  height: 1.198vw;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active + .swiper-pagination-bullet,
+.swiper-pagination-bullet.sibl {
+  width: 0.99vw;
+  height: 0.99vw;
+}
